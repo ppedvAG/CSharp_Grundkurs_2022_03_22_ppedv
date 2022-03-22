@@ -5,7 +5,11 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M001-Einfuehrung", "M001-Einfuehrung", "{80519370-BDA1-4AA1-BEDB-0D64AC78B4B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M001-Einfuehrung", "..\M001-Einfuehrung\M001-Einfuehrung.csproj", "{1B758757-1CB1-4234-91C5-2887319493CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M001-Einfuehrung", "M001-Einfuehrung\M001-Einfuehrung.csproj", "{1B758757-1CB1-4234-91C5-2887319493CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M002-VariablenKonvertierung", "M002-VariablenKonvertierung", "{AB236D18-25CA-4EEC-A677-9F621F32FC3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M002_VariablenKonvertierung", "M002_VariablenKonvertierung\M002_VariablenKonvertierung.csproj", "{A1CB2061-61D5-4B3F-B218-779082CEFCFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{1B758757-1CB1-4234-91C5-2887319493CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B758757-1CB1-4234-91C5-2887319493CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B758757-1CB1-4234-91C5-2887319493CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1CB2061-61D5-4B3F-B218-779082CEFCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CB2061-61D5-4B3F-B218-779082CEFCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CB2061-61D5-4B3F-B218-779082CEFCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CB2061-61D5-4B3F-B218-779082CEFCFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1B758757-1CB1-4234-91C5-2887319493CA} = {80519370-BDA1-4AA1-BEDB-0D64AC78B4B0}
+		{A1CB2061-61D5-4B3F-B218-779082CEFCFE} = {AB236D18-25CA-4EEC-A677-9F621F32FC3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5537E06-9C21-44E4-B3D3-AE5F34656C2F}
