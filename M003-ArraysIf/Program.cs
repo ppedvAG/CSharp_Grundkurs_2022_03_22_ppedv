@@ -90,5 +90,5 @@ if (Zahl1 == 5 && Zahl2 == 7) //Mehrere Bedingungen
 
 //Fragezeichen Operator (?, :) ? ist if, : ist else
 //Fragezeichen Operator braucht immer ein else
-Console.WriteLine(Zahl1 == 5 && Zahl2 == 7 ? "Zahl1 ist 5 und Zahl2 ist 7" : ""); 
+Console.WriteLine(Zahl1 == 5 && Zahl2 == 7 ? "Zahl1 ist 5 und Zahl2 ist 7" : "");
 #endregion
