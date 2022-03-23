@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+M001-Einfuehrung/Program.cs
+M001-Einfuehrung/M-009-LabLoesung.cs

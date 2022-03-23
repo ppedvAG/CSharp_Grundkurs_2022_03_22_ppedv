@@ -39,7 +39,6 @@ public class Program
 		List<Lebewesen> lebewesens = new List<Lebewesen>(); //Liste von Lebewesen, kann alle möglichen Lebewesen (Mensch, Kind) halten
 		lebewesens.Add(m);
 		lebewesens.Add(new Kind("Max", 11, 120));
-
 		foreach (Lebewesen leb in lebewesens) //Liste iterieren und dem Typ entsprechende Methoden aufrufen
 		{
 			if (leb is Mensch)
