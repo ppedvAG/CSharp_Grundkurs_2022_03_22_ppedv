@@ -1,6 +1,5 @@
 ﻿public class Program
 {
-
 	//svm -> Tab -> Tab: generiert Main Methode
 	static void Main(string[] args)
 	{
@@ -16,6 +15,8 @@
 
 		int subtraktion;
 		int addition = AddiereUndSubtrahiere(10, 5, out subtraktion); //out mit Feld verbinden
+
+		(int, int) tupel = AddiereUndSubtrahiere(10, 5); //Tupel verwenden mit tupel.Item1 oder tupel.Item2
 	}
 
 	/// <summary>
@@ -64,5 +65,10 @@
 	{
 		sub = z1 - z2; //alle out Parameter zuweisen
 		return z1 + z2; //return den eigentlichen Wert
+	}
+
+	static (int, int) AddiereUndSubtrahiere(int z1, int z2) //Tupel
+	{
+		return (z1 + z2, z1 - z2);
 	}
 }
