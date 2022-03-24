@@ -120,6 +120,11 @@ public class Program
 		
 		//Erweiterungsmethode (eigene Linq Funktion)
 		List<FahrzeugMarke> alleMarken2 = fahrzeuge.AlleAutomarken();
+
+		//Alle Fahrzeugmarken mit den entsprechenden Höchstgeschwindigkeiten
+		Dictionary<FahrzeugMarke, int> gFahrzeuge = fahrzeuge
+			.GroupBy(e => e.Marke)
+			.ToDictionary(e => e.Key, e => e.Select(x => x.MaxGeschwindigkeit).Max());
 	}
 }
 
