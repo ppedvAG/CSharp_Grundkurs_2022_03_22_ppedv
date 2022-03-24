@@ -117,6 +117,9 @@ public class Program
 		//Aggregate mit Summe (statt Sum)
 		int aggSum = fahrzeuge.Aggregate(0, (sum, fzg) => sum += fzg.MaxGeschwindigkeit);
 		Console.WriteLine(aggSum);
+		
+		//Erweiterungsmethode (eigene Linq Funktion)
+		List<FahrzeugMarke> alleMarken2 = fahrzeuge.AlleAutomarken();
 	}
 }
 
