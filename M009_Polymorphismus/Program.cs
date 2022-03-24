@@ -47,9 +47,9 @@ public class Program
 				//...
 			}
 
-			if (leb is Kind)
+			if (leb is Kind kind)
 			{
-				Kind kind = (Kind)leb;
+				//hier direkt im If ein Cast
 				//...
 			}
 		}

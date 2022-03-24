@@ -8,6 +8,7 @@
 			//Hier wird das Objekt nicht mehr benötigt und wird eingesammelt
 
 			int sum = 0;
+			Fahrzeug.FahrzeugZähler(); //Statische Methode in Fahrzeug
 			Addiere(10, ref sum); //Hier mit ref die Referenzvariable angeben
 			Addiere(10, ref sum);
 			Addiere(10, ref sum);
