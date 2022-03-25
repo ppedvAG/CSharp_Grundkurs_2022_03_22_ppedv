@@ -6,6 +6,8 @@ namespace M015_Files;
 
 public class Program
 {
+	static JsonSerializerSettings settings = new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.Objects };
+
 	static void Main(string[] args)
 	{
 		//Desktop Folder
@@ -67,11 +69,11 @@ public class Program
 	public static void JsonTest(string filePath)
 	{
 		Fahrzeug f = new Fahrzeug() { MaxGeschwindigkeit = 250, AutoMarke = "VW" };
-		string json = JsonConvert.SerializeObject(f);
+		string json = JsonConvert.SerializeObject(f, settings);
 		File.WriteAllText(filePath, json);
 
 		string readJson = File.ReadAllText(filePath);
-		Fahrzeug readFahrzeug = JsonConvert.DeserializeObject<Fahrzeug>(readJson);
+		Fahrzeug readFahrzeug = JsonConvert.DeserializeObject<Fahrzeug>(readJson, settings);
 	}
 
 	public static void XmlTest(string filePath)
