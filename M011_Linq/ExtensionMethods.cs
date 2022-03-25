@@ -7,11 +7,16 @@
 			return x.ToString().ToCharArray().Sum(c => c.ToNumber());
 		}
 
+		public static int ToNumber(this char c) => (int) char.GetNumericValue(c);
+
 		public static List<FahrzeugMarke> AlleAutomarken(this IEnumerable<Fahrzeug> fahrzeuge) //mit this sich auf einen Typen beziehen
 		{
 			return fahrzeuge.Select(e => e.Marke).Distinct().ToList();
 		}
 
-		public static int ToNumber(this char c) => (int) char.GetNumericValue(c);
+		public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> e)
+		{
+			return e.OrderBy(x => Random.Shared.Next());
+		}
 	}
 }

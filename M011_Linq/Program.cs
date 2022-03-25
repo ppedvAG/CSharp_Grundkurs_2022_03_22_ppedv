@@ -125,6 +125,10 @@ public class Program
 		Dictionary<FahrzeugMarke, int> gFahrzeuge = fahrzeuge
 			.GroupBy(e => e.Marke)
 			.ToDictionary(e => e.Key, e => e.Select(x => x.MaxGeschwindigkeit).Max());
+
+		fahrzeuge.Shuffle();
+
+		gFahrzeuge.Shuffle();
 	}
 }
 

@@ -7,7 +7,7 @@ public class Program
 		//ExceptionBasics();
 		try
 		{
-			throw new CustomException("Eine Nachricht");
+			throw new CustomException("Eine Nachricht"); //throw: Exception werfen
 		}
 		catch (CustomException ce)
 		{
